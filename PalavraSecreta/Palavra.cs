@@ -9,6 +9,18 @@ namespace PalavraSecreta
         public string PalavraSecreta;
         public string Descricao;
 
+
+        public Palavra(string palavraSecreta, string descricao)
+        {
+            PalavraSecreta = palavraSecreta;
+            Descricao = descricao;
+        }
+
+        public override string ToString()
+        {
+            return $"A descrição da palavra secreta é : {Descricao}";
+        }
+
         public void AdivinheAPalavraSecreta()
 
         {
